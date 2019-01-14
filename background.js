@@ -12,6 +12,6 @@ function callBack(){
 chrome.runtime.onMessage.addListener(
     function(response, sender, sendResponse){
         if (response == 'trigger')
-            chrome.notifications.create(options, callback);
+            chrome.notifications.create(options, callBack);
     }
 );
