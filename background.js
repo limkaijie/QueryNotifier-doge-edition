@@ -5,12 +5,13 @@ var options = {
   iconUrl: "images/icon.png"
 };
 
-
-function callback(){
+function callBack(){
 
 }
 
-chrome.runtime.onMessage.addListener(function(response,sender,sendResponse){
-    if (response == 'trigger')
-        chrome.notifications.create(options, callback);
-});
+chrome.runtime.onMessage.addListener(
+    function(response, sender, sendResponse){
+        if (response == 'trigger')
+            chrome.notifications.create(options, callback);
+    }
+);
