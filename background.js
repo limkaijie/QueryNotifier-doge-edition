@@ -2,7 +2,7 @@ var options = {
   type: "basic",
   title: "Oi!",
   message: "Your query has completed!",
-  iconUrl: "icon.png"
+  iconUrl: "images/icon.png"
 };
 
 chrome.notifications.create(options, callback);
