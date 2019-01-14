@@ -4,7 +4,8 @@ onkeydown = onkeyup = function(e){
     map[e.keyCode] = e.type == 'keyup';
     /* insert conditional here */
     if(map[17] && map[13]) { // CTRL+SHIFT+A
-        alert('Control Enter');
+        // alert('Control Enter');
+        chrome.runtime.sendMessage('trigger');
         console.log('register')
         map = {};
     }
