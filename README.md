@@ -3,7 +3,7 @@ A chrome extension to notify user when their database query is completed
 
 ![Sample Screenshot](https://github.com/limkaijie/QueryNotifier/blob/master/screenshots/screenshot1.png)
 
-To use this chrome extension:
+### To use this chrome extension:
 1. Clone this repository at your specified directory.
 ```
 git clone https://github.com/limkaijie/QueryNotifier.git
@@ -18,7 +18,7 @@ git clone https://github.com/limkaijie/QueryNotifier.git
 6. Enjoy!
 
 
-**NOTE**
+### NOTE
 
 Only use **Ctrl + Enter** to run a query.
 
