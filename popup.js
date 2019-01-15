@@ -21,15 +21,16 @@ function checkIfTabPaneActive(){
     try{
         var result = document.getElementById('queryResults').className;
         console.log('trying');
+        if (result == 'tab-pane active'){
+            chrome.runtime.sendMessage('trigger');
+            window.clearTimeout(isDone);
+            console.log('done');
+        }
     }
     catch(TypeError){
         window.clearTimeout(isDone);
         console.log('catching');
     }
 
-    if (result == 'tab-pane active'){
-        chrome.runtime.sendMessage('trigger');
-        window.clearTimeout(isDone);
-        console.log('done');
-    }
+
 }
