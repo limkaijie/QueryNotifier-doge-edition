@@ -1,3 +1,5 @@
+var tabId = 0;
+
 var options = {
   type: "basic",
   title: "wow",
@@ -5,13 +7,18 @@ var options = {
   iconUrl: "images/icon.png"
 };
 
-function callBack(){
+function callBack() {
 
 }
 
-chrome.runtime.onMessage.addListener(
-    function(response, sender, sendResponse){
-        if (response == 'trigger')
-            chrome.notifications.create(options, callBack);
+chrome.runtime.onMessage.addListener(function(response, sender, sendResponse) {
+    if (response == 'trigger'){
+        tabId = sender.tab.id;
+        chrome.notifications.create(options, callBack);
     }
-);
+});
+
+chrome.notifications.onClicked.addListener(function(notificationId) {
+    chrome.tabs.update(tabId, {active:true});
+    chrome.notifications.clear(notificationId, callBack);
+});
