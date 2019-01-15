@@ -13,6 +13,7 @@ git clone https://github.com/limkaijie/QueryNotifier.git
 4. Click "Load unpacked".
 
 ![Sample Screenshot](https://github.com/limkaijie/QueryNotifier/blob/master/screenshots/screenshot2.png)
+
 5. Select the directory where you have cloned the repository.
 6. Enjoy!
 
