@@ -4,21 +4,32 @@ var isDone = false;
 onkeydown = onkeyup = function(e) {
     e = e || event; // to deal with IE
     map[e.keyCode] = e.type == 'keyup';
-    /* insert conditional here */
-    if (map[17] && map[13]) { // CTRL+SHIFT+A
+
+    if (map[17] && map[13]) { // CTRL + ENTER
         run();
         map = {};
     }
 }
 
 function run(){
+    // Check every 1000 millisecond
     isDone = window.setInterval(checkIfTabPaneActive, 1000);
 }
 
 function checkIfTabPaneActive(){
-    var result = document.getElementById('queryResults').className;
+
+    try{
+        var result = document.getElementById('queryResults').className;
+        console.log('trying');
+    }
+    catch(TypeError){
+        window.clearTimeout(isDone);
+        console.log('catching');
+    }
+
     if (result == 'tab-pane active'){
         chrome.runtime.sendMessage('trigger');
         window.clearTimeout(isDone);
+        console.log('done');
     }
 }

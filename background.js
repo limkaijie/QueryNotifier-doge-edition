@@ -1,7 +1,7 @@
 var options = {
   type: "basic",
-  title: "Oi!",
-  message: "Your query has completed!",
+  title: "wow",
+  message: "such amaze. your query has completed!",
   iconUrl: "images/icon.png"
 };
 
