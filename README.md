@@ -7,3 +7,5 @@ To use this chrome extension:
 - Enable developer mode.
 - Click "Load unpacked".
 - Select the directory where you have cloned the repository.
+
+![](https://github.com/limkaijie/QueryNotifier/master/screenshot1.png)
