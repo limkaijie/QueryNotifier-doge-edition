@@ -1,5 +1,9 @@
 # QueryNotifier
-A chrome extension to notify user when their database query is completed
+A chrome extension to notify user when their database query is completed. This extension only work with **Hue 4 Interface by Cloudera Enterprise 5.12**.
+
+![Sample Screenshot](http://blog.cloudera.com/wp-content/uploads/2017/08/New-Hue-editor-Layout.png)
+
+**An example of the notification:**
 
 ![Sample Screenshot](https://github.com/limkaijie/QueryNotifier/blob/master/screenshots/screenshot1.png)
 
