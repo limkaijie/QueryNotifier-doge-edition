@@ -17,7 +17,7 @@ Some queries require a long time to execute due to its complexity. This chrome e
 ### How to use this chrome extension?
 1. Clone this repository at your specified directory.
 ```
-git clone https://github.com/limkaijie/QueryNotifier.git
+git clone https://github.com/limkaijie/QueryNotifier-doge-edition.git
 ```
 2. Go to your chrome extension settings by typing chrome://extensions at chrome browser.
 3. Enable developer mode.
