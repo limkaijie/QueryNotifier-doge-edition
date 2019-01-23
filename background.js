@@ -4,7 +4,7 @@ var options = {
   type: "basic",
   title: "wow",
   message: "such amaze. your query has completed!",
-  iconUrl: "images/icon.png"
+  iconUrl: "images/doge128.png"
 };
 
 function callBack() {
